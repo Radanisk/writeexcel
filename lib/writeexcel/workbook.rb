@@ -867,7 +867,7 @@ class Workbook < BIFFWriter
     end
 
     ruby_19 { name = convert_to_ascii_if_ascii(name) }
-    check_sheetname_length(name, name_utf16be)
+    # check_sheetname_length(name, name_utf16be)
     check_sheetname_even(name) if name_utf16be
     check_sheetname_valid_chars(name, name_utf16be)
 
